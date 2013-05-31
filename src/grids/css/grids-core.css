@@ -1,8 +1,9 @@
-.pure-g {
-    letter-spacing: -0.31em; /* Webkit: collapse white-space between units */
+.pure-g,
+.pure-g-r {
+    letter-spacing: -0.69ex; /* Collapse white-space between units */
     *letter-spacing: normal; /* reset IE < 8 */
     *word-spacing: -0.43em; /* IE < 8: collapse white-space between units */
-    text-rendering: optimizespeed; /* Webkit: fixes text-rendering: optimizeLegibility */
+    text-rendering: optimizespeed; /* WebKit: fixes text-rendering: optimizeLegibility */
 }
 
 /* Opera as of 12 on Windows needs word-spacing.
@@ -10,7 +11,8 @@
    and is not required in markup.
 */
 .opera-only :-o-prefocus,
-.pure-g {
+.pure-g,
+.pure-g-r {
     word-spacing: -0.43em;
 }
 
